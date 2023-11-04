@@ -5,11 +5,12 @@ class ChatgptNextWeb < Formula
   sha256 "113a17f5f9a72a412b1c6372e239602e19528bd97ebc47647669a76448323ed3"
 
   def install
-    system "tar", "-xzf", "#{HOMEBREW_CACHE}/ChatGPT.Next.Web_x64.app.tar.gz"
-    bin.install "ChatGPT.Next.Web_x64.app" => "chatgpt_next_web"
+    system "gunzip", buildpath/"ChatGPT.Next.Web_x64.app.tar.gz"  # Unzip the file
+    system "tar", "-xf", buildpath/"ChatGPT.Next.Web_x64.app.tar"  # Untar the file
+    bin.install "ChatGPT.Next.Web_x64.app"  # Install the binary
   end
 
   test do
-    system "#{bin}/chatgpt_next_web", "--version"
+    system "false"
   end
 end
