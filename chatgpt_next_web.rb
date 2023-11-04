@@ -4,10 +4,9 @@ class ChatgptNextWeb < Formula
   url "https://github.com/Yidadaa/ChatGPT-Next-Web/releases/download/v2.9.9/ChatGPT.Next.Web_x64.app.tar.gz"
   sha256 "113a17f5f9a72a412b1c6372e239602e19528bd97ebc47647669a76448323ed3"
 
-  def install
-    # assuming the app is already present in current directory (the buildpath)
-    prefix.install "ChatGPT Next Web.app"
-  end
+def install
+  bin.install "your_executable_file"
+end
 
   test do
     system "#{bin}/chatgpt_next_web", "--version"
