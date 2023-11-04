@@ -1,4 +1,4 @@
-class ChatgptNextWeb < Formula
+class ChatgptNextWeb < Formulae
   desc "GPT-Assets"
   homepage "https://github.com/Figo57/GPT-Assets"
   url "https://github.com/Yidadaa/ChatGPT-Next-Web/releases/download/v2.9.9/ChatGPT.Next.Web_x64.app.tar.gz"
