@@ -1,3 +1,3 @@
-# homebrew-formulae
-Formula:
-  ChatNextWeb
+# homebrew-casks
+
+ChatNextWeb
