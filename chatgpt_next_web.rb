@@ -5,7 +5,7 @@ class ChatgptNextWeb < Formula
   sha256 "113a17f5f9a72a412b1c6372e239602e19528bd97ebc47647669a76448323ed3"
 
 def install
-  bin.install "your_executable_file"
+  bin.install "ChatGPT.Next.Web_x64.app.tar.gz" => "ChatGPT Next Web.app"
 end
 
   test do
